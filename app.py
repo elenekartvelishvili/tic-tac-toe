@@ -17,8 +17,8 @@ def print_board():
     print()
 
 # ---------------- CHECK WIN ----------------
-def check_winner(b):
-    for a,b1,c in wins:
+def check_winner(board):
+    for a, b1, c in wins:
         if board[a] == board[b1] == board[c] != " ":
             return board[a]
     return None
